@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>All about Pasta</title>
+	<script src="main.js" defer></script>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"> 
+</head>
+<body>
+	<header>
+	   <h1 id="title">All about Pasta</h1>
+	   <p>We all had pasta before, but have you ever wondered where pasta comes from? We're about to find out together!</p>
+	</header>
+	<button id="btnFS">Fullscreen</button>
+	<button id="btnWS">Exit Fullscreen</button>
+	<nav> <!--menu system-->
+		<ul>
+			<li><button id="page1btn">History of Pasta</button></li>
+			<li><button id="page2btn">Types of Pasta</button></li>
+			<li><button id="page3btn">Process of making Pasta</button></li>
+		</ul>
+	</nav>
+	<main id="pagecontainer">
+		<section class="page" id="page1">
+		<h2>History of Pasta</h2>
+		<p id="p1">
+		Pasta’s earliest roots begin in China, during the <a href="https://en.wikipedia.org/wiki/Shang_dynasty" title="from 1700 to 1100 BC">Shang Dynasty</a>, where some form of pasta was made with either wheat or rice flour.<br>
+		Pasta also appears to be featured in the ancient Greek diet in the first millennium BC.<br>
+		Likewise, Africa had its own form of pasta made with the <a href="https://en.wikipedia.org/wiki/Khorasan_wheat">kamut crop</a>.<br>
+		The link of pasta to Italy begins as early as 400 BC, where evidence of Etruscans making pasta was found.<br>
+		However, the first <i>concrete</i> information on pasta products dates back to the 13th to 14th centuries.
+		</p>
+		<img src="images/history(wiki).jpg" alt="Making pasta; illustration from the 15th-century edition of Tacuinum Sanitatis, a Latin translation of the Arabic work Taqwīm al-sihha by Ibn Butlan">
+		</section>
+		<section class="page" id="page2">
+		<h2>Types of Pasta</h2>
+		<p id="p2">
+		While some sources say that there are over 1300 pasta names, this number goes a lot deeper than that.<br>
+		This number was a result of a person interviewing people in Italy and noted a bunch of pasta names<sup><a href="https://books.google.com.sg/books/about/Encyclopedia_of_Pasta.html?id=D5nXAbSifIgC">[source]</a></sup>, which is not accurate to the total number of pasta shapes, as some names didn't have a known shape, some names were just variations on size, and some names were different for the same shape.<br>
+		Therefore, there are about 140 to 300 pasta shapes today, depending on the level of distinction.<sup><a href="https://books.google.com.sg/books/about/Pasta_and_Noodles.html?id=G5qRDQAAQBAJ">[source]</a></sup><br>
+		There are 2 different types of pasta, fresh pasta made with low-gluten flour and dried pasta made with high-gluten flour.<br>
+		The low-gluten flour mixes with egg, increasing protein and binding the dough together which formed simple shapes to compliment delicate sauces.<br>
+		Meanwhile, the high-gluten flour was hydrated with water, forming strong yet inelastic dough, which is then sculpted and dried into more complex shapes that held against chunkier sauces.<br>
+		Some of these pasta shapes should be familiar to you, such as: spaghetti, macaroni, penne, fettuccine, gnocchi, fusilli, linguine, and rigatoni.<br>
+		Likewise, there are hundreds of pasta dishes made with these pasta shapes as well!<br>
+		One of my favourites is <a href="https://en.wikipedia.org/wiki/Spaghetti_aglio_e_olio">aglio e olio</a>, a garlicky, oily pasta dish made with spaghetti noodles.
+		</p>
+		<img src="images/aglio_e_olio.jpg" alt="An image of aglio e olio.">
+		</section>
+		<section class="page" id="page3">
+		<h2>Process of making Pasta</h2>
+		<p>~Minigame~</p>
+		<div id="minigame">
+			<div id="text"></div>
+			<div id="flourID">Flour</div>
+			<div id="eggID">Egg</div>
+			<div id="doughID">Pasta Dough</div>
+			<div id="flatID">Flat Pasta Dough</div>
+			<div id="cutID">Uncooked spaghetti noodles</div>
+			<div id="cookedID">Cooked spaghetti noodles</div>
+			<div id="bowlID">Bowl</div>
+			<div id="potID">Pot of boiling water</div>
+			<div id="pinID">Rolling Pin</div>
+			<div id="knifeID">Knife</div>
+		</div>
+		<button id="resetbtn">Reset</button>
+		</section>
+		<footer>
+			<img id="qrImg" src="images/qr.png">
+		</footer>
+	</main>
+</body>
+
+
+
+<!--
+pasta wasn't first called pasta
+low-gluten grain grows in the north while high-gluten grows in the south
+The low-gluten flour mixes with egg, increasing protein and binding the dough together which formed simple shapes to compliment delicate sauces.<br>
+Meanwhile, the high-gluten flour was hydrated with water, forming strong yet inelastic dough, which is then
+sculpted and dried into more complex shapes that held against chunkier sauces<br>
+
+shaping doughs was seen as women's work; they got creative
+
+While there were practical choices based off how different shapes and ingredients interacted with sauces and cooking methods, many pasta shapes were functionally art.
+
+they were inspired by the world around them, or they expressed themselves with limited resources.
+
+the mix of regionalism, functionality, and creativity is why there are so many pasta shapes.
+-->

@@ -39,12 +39,13 @@ header{padding:10px;}
 	vertical-align: sub;
 }
 @media (max-width:800px){#p1, #p2{width:100%; top: 0vh;}}
-
-/*img{
-	vertical-align: text-bottom;
-	display: inline-block;
-}*/
-
+#quiz {margin: 25px;}
+fieldset {font-size: 1.2em;}
+#btnSubmit {width: 150px; height: 50px; font-size: 1.2em;}
+footer {
+	position: relative;
+	top: 150px;
+}
 
 /* bg image */
 body {
@@ -88,7 +89,7 @@ background-position: center;
 		margin-bottom: 5px;
 		font-size: 0.8em;
 	}
-	#qrImg{display:none;} /*hide QR code */
+	footer {display:none;} /*hide QR code */
 }
 /* minigame elements */
 #text{
@@ -104,21 +105,19 @@ background-position: center;
 	transition: all 0.5s;
 }
 @media (max-width:800px){
-	#flourID, #bowlID, #eggID, #doughID, #pinID, #knifeID, #flatID, #cutID, #potID, #cookedID {
+	#flourID, #bowlID, #eggID, #doughID, #pinID, #knifeID, #flatID, #cutID, #potID, #cookedID, #flourID img, #bowlID img, #eggID img, #doughID img, #pinID img, #knifeID img, #flatID img, #cutID img, #potID img, #cookedID img {
 		width: 80px; height: 80px;
 	}
 }
-/* ingredients */
+/* ingredients
 #flourID, #eggID {background: cyan;}
-{background: cyan;}
 
-/* types of dough */
+/* types of dough
 #doughID, #cookedID, #flatID, #cutID {background: yellow;}
-{background: yellow;}
 
-/*aparatus*/
+/*aparatus
 #pinID, #knifeID, #bowlID {background: white;}
-#potID {background: cyan;}
+#potID {background: cyan;}*/
 
 div#minigame{
 	background: white;

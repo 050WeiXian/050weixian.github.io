@@ -57,12 +57,14 @@ function show(pgno){ //function to show selected page no
 }
 
 function flour2bowl(){ //put flour in bowl
-	popAudio.play(); //play sound effect
 	flourID.style.transition = "all 0.5s";
 	flourID.style.top = up;
 	flourID.style.left = mid;
 	flour = true;
-	setTimeout(function() {flourID.style.top = down; if (flour && egg) {makedough();}}, 500);
+	setTimeout(function() {
+		flourID.style.top = down; popAudio.play(); //play sound effect
+		if (flour && egg) {makedough();}
+	}, 500);
 	setTimeout(function() {flourID.style.display = "none";}, 1000);
 	
 }
@@ -209,6 +211,21 @@ function resetb(){ //resets game
 	flour = false; egg = false;
 	
 }
+const btnSubmit = document.querySelector("#btnSubmit");
+const scorebox = document.querySelector("#scorebox");
+var q1, q2, score = 0;
+function checkAns(){
+	score = 0; //reset score to 0, check ans and give score if correct
+	//read the value of the selected radio button for q1
+	q1 = document.querySelector("input[name='q1']:checked").value;
+	//console.log(q1); //check q1 value retrieved
+	if(q1 == "Su Filindeu") score++;
+	//read the value of the selected radio button for q2
+	q2 = document.querySelector("input[name='q2']:checked").value;
+	//console.log(q2); //check q2 value retrieved
+	if(q2 == "Salt") score++;
+	scorebox.innerHTML = "Score: " + score + "/2";
+}
 resetb();
 /*Listen for clicks on the buttons, assign anonymous eventhandler functions to call show function*/
 page1btn.addEventListener("click", function () {show(1);});
@@ -218,3 +235,4 @@ show(1);
 flourID.addEventListener("click", function () {flour2bowl();});
 eggID.addEventListener("click", function () {egg2bowl();});
 resetbtn.addEventListener("click", function () {resetb();});
+btnSubmit.addEventListener("click",checkAns);

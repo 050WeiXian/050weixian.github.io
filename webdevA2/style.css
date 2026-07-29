@@ -1,0 +1,128 @@
+/*custom fonts*/
+@font-face {
+	font-family: Torus;
+	src: url('fonts/Torus Regular.otf');
+}
+@font-face {
+	font-family: "Torus Bold";
+	src: url('fonts/Torus Bold.otf');
+}
+h1{font-size: 3.5em;}
+h1, h2 {font-family: "Torus Bold", serif; font-weight: normal; line-height: 1.5em;}
+header p{font-size: 1.2em;}
+* {
+	margin: auto;
+	text-align: center;
+	font-family: Torus, serif;
+	font-weight: normal;
+}
+.page{
+	width:80vw; 
+	height:70vh; 
+	/*border:1px solid red;*/
+	padding:5px;
+}
+nav ul li{display:inline;}
+header{padding:10px;}
+#p1{
+	position: relative;
+	width:50vw;
+	/*left:-10vw; */top:-10vh;
+	display: inline-block;
+	vertical-align: sub;
+}
+#p2{
+	position: relative;
+	width:40vw;
+	/*left:-2vw;*/ top: 3vh;
+	display: inline-block;
+	vertical-align: sub;
+}
+@media (max-width:800px){#p1, #p2{width:100%; top: 0vh;}}
+#quiz {margin: 25px;}
+fieldset {font-size: 1.2em;}
+#btnSubmit {width: 150px; height: 50px; font-size: 1.2em;}
+footer {
+	position: relative;
+	top: 150px;
+}
+
+/* bg image */
+body {
+background-image: url("images/gradient.jpg");
+background-size: cover;
+background-position: center;
+}
+
+/* buttons */
+#page1btn, #page2btn, #page3btn {
+	width: 28vw; height: 5vw;
+	margin-left: 1vw;
+	font-size: 1.5em;
+	position: relative;
+	left: -2.6vw;
+}
+#btnFS, #btnWS {
+	width: 10vw; height: 3vw;
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+
+#resetbtn {
+	width: 100px; height: 50px;
+	font-size: 1.1em;
+}
+@media (max-width:800px){
+	#page1btn, #page2btn, #page3btn{
+		left: 0.5vw;
+		width: 90%;
+		height: 5vw;
+		margin: 5px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1em;
+	}
+	#btnFS, #btnWS {
+		width: 20vw; height: 6vw;
+		margin-bottom: 5px;
+		font-size: 0.8em;
+	}
+	footer {display:none;} /*hide QR code */
+}
+/* minigame elements */
+#text{
+	padding: 10px;
+}
+#flourID, #bowlID, #eggID, #doughID, #pinID, #knifeID, #flatID, #cutID, #potID, #cookedID {
+	width: 100px; height: 100px;
+	border: 2px solid black;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	transition: all 0.5s;
+}
+@media (max-width:800px){
+	#flourID, #bowlID, #eggID, #doughID, #pinID, #knifeID, #flatID, #cutID, #potID, #cookedID, #flourID img, #bowlID img, #eggID img, #doughID img, #pinID img, #knifeID img, #flatID img, #cutID img, #potID img, #cookedID img {
+		width: 80px; height: 80px;
+	}
+}
+/* ingredients
+#flourID, #eggID {background: cyan;}
+
+/* types of dough
+#doughID, #cookedID, #flatID, #cutID {background: yellow;}
+
+/*aparatus
+#pinID, #knifeID, #bowlID {background: white;}
+#potID {background: cyan;}*/
+
+div#minigame{
+	background: white;
+	border: 1px solid black;
+	position: relative;
+	height: 350px; width: 80%; left: 9%;
+	margin: 10px;
+}

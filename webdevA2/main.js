@@ -218,11 +218,9 @@ function checkAns(){
 	score = 0; //reset score to 0, check ans and give score if correct
 	//read the value of the selected radio button for q1
 	q1 = document.querySelector("input[name='q1']:checked").value;
-	//console.log(q1); //check q1 value retrieved
 	if(q1 == "Su Filindeu") score++;
 	//read the value of the selected radio button for q2
 	q2 = document.querySelector("input[name='q2']:checked").value;
-	//console.log(q2); //check q2 value retrieved
 	if(q2 == "Salt") score++;
 	scorebox.innerHTML = "Score: " + score + "/2";
 }

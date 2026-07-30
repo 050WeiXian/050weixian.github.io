@@ -18,8 +18,7 @@ header p{font-size: 1.2em;}
 }
 .page{
 	width:80vw; 
-	height:70vh; 
-	/*border:1px solid red;*/
+	height:70vh;
 	padding:5px;
 }
 nav ul li{display:inline;}
@@ -27,14 +26,14 @@ header{padding:10px;}
 #p1{
 	position: relative;
 	width:50vw;
-	/*left:-10vw; */top:-10vh;
+	top:-10vh;
 	display: inline-block;
 	vertical-align: sub;
 }
 #p2{
 	position: relative;
 	width:40vw;
-	/*left:-2vw;*/ top: 3vh;
+	top: 3vh;
 	display: inline-block;
 	vertical-align: sub;
 }
@@ -49,9 +48,9 @@ footer {
 
 /* bg image */
 body {
-background-image: url("images/gradient.jpg");
-background-size: cover;
-background-position: center;
+	background-image: url("images/gradient.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 /* buttons */
@@ -104,20 +103,28 @@ background-position: center;
 	margin: 20px;
 	transition: all 0.5s;
 }
+
 @media (max-width:800px){
-	#flourID, #bowlID, #eggID, #doughID, #pinID, #knifeID, #flatID, #cutID, #potID, #cookedID, #flourID img, #bowlID img, #eggID img, #doughID img, #pinID img, #knifeID img, #flatID img, #cutID img, #potID img, #cookedID img {
-		width: 80px; height: 80px;
+	#flourID, #bowlID, #eggID, #doughID, #pinID, #knifeID, #flatID, #cutID, #potID, #cookedID {
+		transform: scale(.8); /* i got this from stackoverflow */
+		/*
+		Source - https://stackoverflow.com/a/50301332
+		Posted by user7148391, modified by community. See post 'Timeline' for change history
+		Retrieved 2026-07-30, License - CC BY-SA 4.0
+		*/
 	}
 }
-/* ingredients
-#flourID, #eggID {background: cyan;}
-
-/* types of dough
-#doughID, #cookedID, #flatID, #cutID {background: yellow;}
-
-/*aparatus
-#pinID, #knifeID, #bowlID {background: white;}
-#potID {background: cyan;}*/
+/*css sprites*/
+#potID {background: url('images/minigame.png') no-repeat 0 0;}
+#knifeID {background: url('images/minigame.png') no-repeat -105px 0;}
+#flourID {background: url('images/minigame.png') no-repeat -210px 0;}
+#flatID {background: url('images/minigame.png') no-repeat -315px 0;}
+#eggID {background: url('images/minigame.png') no-repeat -420px 0;}
+#doughID {background: url('images/minigame.png') no-repeat 0 -105px;}
+#cookedID {background: url('images/minigame.png') no-repeat -105px -105px;}
+#bowlID {background: url('images/minigame.png') no-repeat -210px -105px;}
+#cutID {background: url('images/minigame.png') no-repeat -315px -105px;}
+#pinID {background: url('images/minigame.png') no-repeat -420px -105px;}
 
 div#minigame{
 	background: white;
